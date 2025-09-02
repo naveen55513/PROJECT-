@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("🤖 GenAI & ML Projects")
 
-api_key = "AIzaSyCPetcQggnpzTWEKQnP6c-YismMn17eSWQ"
+api_key = "enter your api key "
 
 st.markdown("Explore GenAI (Gemini) and Machine Learning models.")
 
@@ -20,7 +20,7 @@ tabs = st.tabs([ "🤖 GenAI","📈 Linear Regression","💬 Sentiment Analysis"
 
 # 1. "🤖 GenAI"
 with tabs[0]:
-    API_KEY = "AIzaSyCPetcQggnpzTWEKQnP6c-YismMn17eSWQ" # <--- REPLACE THIS WITH YOUR ACTUAL API KEY
+    API_KEY = "enter your api key" # <--- REPLACE THIS WITH YOUR ACTUAL API KEY
 
     BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
@@ -38,7 +38,7 @@ Ask me anything! I'm powered by Google's Gemini 2.5 Flash AI and can answer a wi
         if not user_input.strip():
             st.warning("Please enter a question to ask the AI.")
         elif API_KEY == "YOUR_GEMINI_API_KEY" or not API_KEY.strip():
-            st.error("AIzaSyBUYjUu93GdXJMbkaa364gFKKOS81zGugg")
+            st.error("api key ")
             st.info("You can get an API key from [Google AI Studio](https://makersuite.google.com/)."
                     "\n\n**Note:** For deployment, consider using Streamlit Secrets for API keys.")
         else:
